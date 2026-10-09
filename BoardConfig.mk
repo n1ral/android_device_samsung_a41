@@ -71,6 +71,12 @@ TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ADDITIONAL_FLAGS := LOCALVERSION=
 
+# DTBO/DTB images are built from source by vendor/lineage/build/tasks/kernel.mk
+# (see configs/dtboimg.cfg and configs/dtbimg.cfg for the entry tables).
+BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_DTBO_CFG := $(DEVICE_PATH)/configs/dtboimg.cfg
+BOARD_DTB_CFG := $(DEVICE_PATH)/configs/dtbimg.cfg
+
 BOARD_MKBOOTIMG_ARGS := --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
 BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
