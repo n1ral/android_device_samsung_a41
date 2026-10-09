@@ -7,12 +7,6 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),a41)
-A41_DEVICE_PATH := $(LOCAL_PATH)
-
-$(PRODUCT_OUT)/dtb.img: $(A41_DEVICE_PATH)/prebuilts/dtb.img
-	$(hide) mkdir -p $(dir $@)
-	$(hide) cp -f $< $@
-
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 VENDOR_SYMLINKS := \
