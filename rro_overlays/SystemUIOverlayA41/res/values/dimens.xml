@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020 The Proton AOSP Project
+Licensed SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <dimen name="rounded_corner_content_padding">8dp</dimen>
+
+    <dimen name="status_bar_padding_end">6dp</dimen>
+
+    <dimen name="status_bar_padding_start">16dp</dimen>
+
+    <dimen name="status_bar_padding_top">4dp</dimen>
+
+    <dimen name="physical_power_button_center_screen_location_y">1150px</dimen>
+
+    <item name="proximity_sensor_threshold" translatable="false" format="float" type="dimen">5</item>
+
+</resources>

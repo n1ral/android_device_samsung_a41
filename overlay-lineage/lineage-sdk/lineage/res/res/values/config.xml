@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015-2016 The CyanogenMod Project
+                   2017-2018 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <integer name="config_deviceHardwareKeys">64</integer>
+
+    <integer name="config_deviceHardwareWakeKeys">64</integer>
+
+    <integer name="config_deviceLightCapabilities">0</integer>
+
+    <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
+        <item>org.telegram.messenger</item>
+        <item>org.thunderdog.challegram</item>
+        <item>us.zoom.videomeetings</item>
+    </string-array>
+
+    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
+        <item>org.lineageos.aperture</item>
+        <item>org.lineageos.aperture.dev</item>
+    </string-array>
+</resources>

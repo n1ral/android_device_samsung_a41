@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<Included>
+    <Decoders>
+        <MediaCodec name="OMX.MTK.AUDIO.DECODER.MP3" type="audio/mpeg" rank="6">
+            <Limit name="channel-count" max="2" />
+            <Quirk name="decoder-lies-about-number-of-channels" />
+            <Quirk name="supports-multiple-frames-per-input-buffer" />
+        </MediaCodec>
+        <MediaCodec name="OMX.MTK.AUDIO.DECODER.GSM" type="audio/gsm" >
+            <Limit name="channel-count" max="1" />
+        </MediaCodec>
+        <MediaCodec name="OMX.MTK.AUDIO.DECODER.WMA" type="audio/x-ms-wma" >
+            <Limit name="channel-count" max="2" />
+        </MediaCodec>
+        <MediaCodec name="OMX.MTK.AUDIO.DECODER.ADPCM.MS" type="audio/x-adpcm-ms" >
+            <Limit name="channel-count" max="8" />
+        </MediaCodec>
+        <MediaCodec name="OMX.MTK.AUDIO.DECODER.ADPCM.DVI" type="audio/x-adpcm-dvi-ima" >
+            <Limit name="channel-count" max="8" />
+        </MediaCodec>
+        <MediaCodec name="OMX.MTK.AUDIO.DECODER.APE" type="audio/ape" >
+            <Limit name="channel-count" max="2" />
+            <Quirk name="decoder-lies-about-number-of-channels" />
+            <Quirk name="supports-multiple-frames-per-input-buffer" />
+        </MediaCodec>
+        <MediaCodec name="OMX.MTK.AUDIO.DECODER.ALAC" type="audio/alac" >
+            <Limit name="channel-count" max="8" />
+        </MediaCodec>
+    </Decoders>
+</Included>
