@@ -69,7 +69,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/a41
 TARGET_KERNEL_CONFIG := a41_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-TARGET_KERNEL_ADDITIONAL_FLAGS := LOCALVERSION=
+TARGET_KERNEL_ADDITIONAL_FLAGS := LOCALVERSION= KCFLAGS='-Wno-fortify-source -Wno-error=pointer-to-int-cast -Wno-error=strict-prototypes -Wno-error=unused-function -Wno-error=macro-redefined'
 
 # DTBO/DTB images are built from source by vendor/lineage/build/tasks/kernel.mk
 # (see configs/dtboimg.cfg and configs/dtbimg.cfg for the entry tables).
