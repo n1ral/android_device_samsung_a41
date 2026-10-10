@@ -504,8 +504,11 @@ PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0.vendor \
     android.hardware.atrace@1.0-service
 
-PRODUCT_PACKAGES += \
-    wpa_supplicant
+# Do not add the AOSP wpa_supplicant module here: the stock Samsung
+# /vendor/bin/hw/wpa_supplicant (HIDL-only) is shipped as a blob, and the
+# AOSP module would race it for the same install path while re-declaring
+# the AIDL ISupplicant VINTF fragment, which makes the framework wait on
+# an AIDL supplicant that never registers (Wi-Fi shows no networks).
 PRODUCT_PACKAGES += \
     android.hardware.wifi.supplicant@1.0.vendor \
     android.hardware.wifi.supplicant@1.1.vendor \
