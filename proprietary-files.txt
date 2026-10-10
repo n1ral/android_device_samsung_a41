@@ -2302,8 +2302,6 @@ vendor/lib64/android.hardware.wifi@1.5.so
 vendor/lib64/android.system.wifi.keystore@1.0.so
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libforkexecwrap.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/meta_wifi_data.so
